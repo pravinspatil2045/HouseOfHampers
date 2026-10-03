@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#273BBC" />
+    <meta name="description" content="A little thought. A lot of happy. Discover gift hampers full of personality at House of Hampers, with thoughtful treats and a note that's all you." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="House of Hampers | Good things. Great feelings." />
+    <meta property="og:description" content="Thoughtfully put together. Happily given. Discover a more personal way to gift." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preload" as="image" href="/images/hero.webp" />
+    <title>House of Hampers | Good things. Great feelings.</title>
+    <script>
+      try {
+        const theme = localStorage.getItem('hoh-theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      } catch { /* The site also works without browser storage. */ }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
